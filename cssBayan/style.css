@@ -1,1 +1,117 @@
-some style
+.ccs-bayan {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 74rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+
+
+/* .container:hover+.css-bayan__item.css-bayan__subtitle.css-bayan__icon-open {
+    display: block;
+} */
+
+.css-bayan__title {
+    font-size: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.css-bayan__item {
+    border-top: 0.1rem solid #ccc;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.css-bayan__subtitle {
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: blue;
+}
+
+.css-bayan__subtitle:hover~.css-bayan__icon-open {
+    display: none;
+}
+
+.css-bayan__subtitle:hover~.css-bayan__content {
+    display: flex;
+}
+
+.css-bayan__input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.css-bayan__input:checked~.css-bayan__content {
+    display: flex;
+}
+
+.css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-open {
+    display: none;
+}
+
+.css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-close {
+    display: block;
+}
+
+/* .css-bayan__input:checked~.css-bayan__subtitle {
+    color: blue
+} */
+
+.css-bayan__icon-open {
+    max-width: 2.6rem;
+    max-height: 2.6rem;
+    display: none;
+}
+
+
+
+.css-bayan__icon-close {
+    max-width: 2rem;
+    max-height: 2rem;
+    display: none;
+}
+
+
+
+.css-bayan__content {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    display: none;
+}
+
+.css-bayan__img {}
+
+/* .css-bayan__subtitle:hover~.css-bayan__icon-open {
+    display: blocks;
+} */
+
+/* Работает */
+/* .css-bayan__input:hover~.css-bayan__subtitle .css-bayan__icon-open {
+    display: block;
+} */
+
+.container:hover>.css-bayan__item .css-bayan__subtitle {
+    color: black;
+}
+
+.container:hover>.css-bayan__item .css-bayan__subtitle .css-bayan__icon-open {
+    display: block;
+}
