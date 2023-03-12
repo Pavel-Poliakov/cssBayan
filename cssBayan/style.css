@@ -33,8 +33,6 @@
     cursor: pointer;
 }
 
-
-
 .css-bayan__subtitle {
     font-size: 3rem;
     color: blue;
@@ -88,16 +86,6 @@
     display: inline;
 }
 
-
-.css-bayan__img {}
-
-.img-scale {
-    scale: 1.05;
-    transition: 0.3s;
-}
-
-
-
 .css-bayan__subtitle:active>.css-bayan__wrapper {
     color: red;
     cursor: grabbing;
@@ -115,19 +103,6 @@
     display: block;
 }
 
-
-
-/* Работает */
-
-.css-bayan__input:hover~.css-bayan__subtitle .css-bayan__content .img-scale {
-    scale: 1;
-    transition: 0.3s;
-}
-
-
-
-
-
 .css-bayan__item:hover>.css-bayan__subtitle .css-bayan__content {
     display: flex;
 
@@ -136,10 +111,6 @@
 .css-bayan__input:checked~.css-bayan__subtitle .css-bayan__content {
     display: flex;
 }
-
-
-
-
 
 .css-bayan__input:checked~.css-bayan__subtitle {
     color: black;
@@ -220,7 +191,28 @@
     }
 }
 
-@media(max-width:320px) {
+@media(max-width:610px) {
+    .css-bayan__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .css-bayan__icon-open {
+        max-width: 1.6rem;
+        max-height: 1.6rem;
+    }
+
+    .css-bayan__icon-close {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+
+    .css-bayan__icon-red {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+}
+
+@media(max-width:400px) {
     .css-bayan__title {
         font-size: 2.5rem;
         padding-top: 4rem;
