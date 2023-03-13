@@ -1,0 +1,290 @@
+.ccs-bayan {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: antiquewhite;
+}
+
+.container {
+    max-width: 74rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+
+.container-title {
+    max-width: 74rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.css-bayan__title {
+    font-size: 4rem;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+}
+
+.css-bayan__item {
+    border-top: 0.1rem solid #ccc;
+    cursor: pointer;
+}
+
+.css-bayan__subtitle {
+    font-size: 3rem;
+    color: blue;
+}
+
+.css-bayan__input {
+    width: 0;
+    height: 0;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+
+.css-bayan__icon-open {
+    max-width: 2.6rem;
+    max-height: 2.6rem;
+    display: none;
+}
+
+.css-bayan__icon-close {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.3rem;
+    display: none;
+}
+
+.css-bayan__icon-red {
+    max-width: 2rem;
+    max-height: 2rem;
+    margin-right: 0.3rem;
+    display: none;
+}
+
+.css-bayan__content {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.bg-1 {
+    background-image: url('img/bayan1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-2 {
+    background-image: url('img/bayan2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-3 {
+    background-image: url('img/bayan3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-4 {
+    background-image: url('img/bayan4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-5 {
+    background-image: url('img/bayan5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.css-bayan__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    gap: 1rem;
+}
+
+.css-bayan__input {
+    display: inline;
+}
+
+.css-bayan__subtitle:active>.css-bayan__wrapper {
+    color: red;
+    cursor: grabbing;
+}
+
+.css-bayan__subtitle:active>.css-bayan__content {
+    cursor: grabbing;
+}
+
+.container:hover>.css-bayan__item:hover>.css-bayan__subtitle:active>.css-bayan__wrapper .css-bayan__icon-close {
+    display: none;
+}
+
+.container:hover>.css-bayan__item:hover>.css-bayan__subtitle:active>.css-bayan__wrapper .css-bayan__icon-red {
+    display: block;
+}
+
+.css-bayan__item:hover>.css-bayan__subtitle .css-bayan__content .css-bayan__bg {
+    height: 30rem;
+    width: 30rem;
+    opacity: 1;
+    transition: all 1s ease;
+}
+
+.css-bayan__input:checked~.css-bayan__subtitle .css-bayan__content .css-bayan__bg {
+    height: 30rem;
+    width: 30rem;
+    opacity: 1;
+}
+
+.css-bayan__input:checked~.css-bayan__subtitle {
+    color: black;
+}
+
+.container:hover>.css-bayan__item .css-bayan__subtitle {
+    color: black;
+    transition: all 0.5s;
+}
+
+.container:hover>.css-bayan__item .css-bayan__subtitle .css-bayan__icon-open {
+    display: block;
+}
+
+.container:hover>.css-bayan__item:hover>.css-bayan__subtitle .css-bayan__icon-open {
+    display: none;
+}
+
+
+.container:hover>.css-bayan__item:hover>.css-bayan__subtitle .css-bayan__icon-close {
+    display: block;
+}
+
+.container:hover>.css-bayan__item .css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-close {
+    display: block;
+}
+
+.container:hover>.css-bayan__item .css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-open {
+    display: none;
+}
+
+@media(max-width:820px) {
+    .css-bayan__title {
+        font-size: 3.5rem;
+    }
+
+    .css-bayan__item {
+        cursor: none;
+    }
+
+    .css-bayan__subtitle {
+        font-size: 2rem;
+        color: black;
+    }
+
+    .css-bayan__icon-open {
+        max-width: 2rem;
+        max-height: 2rem;
+        display: none;
+    }
+
+    .css-bayan__icon-close {
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        display: none;
+    }
+
+    .css-bayan__icon-red {
+        max-width: 1.5rem;
+        max-height: 1.5rem;
+        display: none;
+    }
+
+    .css-bayan__icon-open {
+        display: block;
+    }
+
+    .css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-open {
+        display: none;
+    }
+
+    .css-bayan__input:checked~.css-bayan__subtitle .css-bayan__icon-close {
+        display: block;
+    }
+
+    .img-scale {
+        scale: 1;
+    }
+}
+
+@media(max-width:610px) {
+    .css-bayan__subtitle {
+        font-size: 1.5rem;
+    }
+
+    .css-bayan__icon-open {
+        max-width: 1.6rem;
+        max-height: 1.6rem;
+    }
+
+    .css-bayan__icon-close {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+
+    .css-bayan__icon-red {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+}
+
+@media(max-width:400px) {
+    .css-bayan__title {
+        font-size: 2.5rem;
+        padding-top: 4rem;
+    }
+
+    .css-bayan__subtitle {
+        font-size: 1rem;
+    }
+
+    .css-bayan__icon-open {
+        max-width: 1.2rem;
+        max-height: 1.2rem;
+    }
+
+    .css-bayan__icon-close {
+        max-width: 1rem;
+        max-height: 1rem;
+        margin-right: 0.1rem;
+
+    }
+
+    .css-bayan__icon-red {
+        max-width: 1rem;
+        max-height: 1rem;
+        margin-right: 0.1rem;
+
+    }
+}
