@@ -69,16 +69,59 @@
 .css-bayan__content {
     display: flex;
     justify-content: center;
-    margin-bottom: 2rem;
-    display: none;
+    padding-bottom: 1rem;
+}
 
+.bg-1 {
+    background-image: url('img/bayan1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-2 {
+    background-image: url('img/bayan2.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-3 {
+    background-image: url('img/bayan3.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-4 {
+    background-image: url('img/bayan4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
+}
+
+.bg-5 {
+    background-image: url('img/bayan5.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 0;
+    width: 0;
+    opacity: 0;
 }
 
 .css-bayan__wrapper {
     display: flex;
     justify-content: space-between;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     gap: 1rem;
 }
 
@@ -103,13 +146,17 @@
     display: block;
 }
 
-.css-bayan__item:hover>.css-bayan__subtitle .css-bayan__content {
-    display: flex;
-
+.css-bayan__item:hover>.css-bayan__subtitle .css-bayan__content .css-bayan__bg {
+    height: 30rem;
+    width: 30rem;
+    opacity: 1;
+    transition: all 1s ease;
 }
 
-.css-bayan__input:checked~.css-bayan__subtitle .css-bayan__content {
-    display: flex;
+.css-bayan__input:checked~.css-bayan__subtitle .css-bayan__content .css-bayan__bg {
+    height: 30rem;
+    width: 30rem;
+    opacity: 1;
 }
 
 .css-bayan__input:checked~.css-bayan__subtitle {
